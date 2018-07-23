@@ -1030,7 +1030,7 @@ header{
 	z-index: 1;
 }
 
-.header_line{
+.loaded .header_line{
 	height: 2px;
 	color: #444;
 	background-color: #88BBD6;
@@ -1038,18 +1038,18 @@ header{
 	z-index: 1;
 }
 
-.header_wrapper{
+.loaded .header_wrapper{
 	overflow: scroll;
 	bottom: 0;
 	padding-bottom: 7px;
 }
 
-.header_navbar{
+.loaded .header_navbar{
 	display: block;
 	float: left;
 }
 
-.header_navbar a{
+.loaded .header_navbar a{
 	float: left;
 	text-align: center;
 	text-decoration: none;
@@ -1058,24 +1058,24 @@ header{
 	color: #E9E9E9;
 }
 
-.header_navbar a:active{
+.loaded .header_navbar a:active{
 	color: #200;
 }
 
-.header_navbar a:hover{
+.loaded .header_navbar a:hover{
 	color: #888;
 }
 
-.header_navbar a:hover{
+.loaded .header_navbar a:hover{
 	color: #888;
 }
 
-.header_navbar_nav{
+.loaded .header_navbar_nav{
 	margin-top: 12px;
 	display: inline-block;
 }
 
-#header_navbar_firstname{
+.loaded #header_navbar_firstname{
 	color: #E9E9E9;
 	font-size: 40px;
 	text-decoration: bold;
@@ -1086,7 +1086,7 @@ header{
 	font-family: 'Amatic SC', cursive;
 }
 
-#header_navbar_lastname{
+.loaded #header_navbar_lastname{
 	color: #E9E9E9;
 	font-size: 40px;
 	text-decoration: bold;
@@ -1097,12 +1097,12 @@ header{
 	font-family: 'Amatic SC', cursive;
 }
 
-.head_connect{
+.loaded .head_connect{
 	float: right;
 	display: block;
 }
 
-.header_connect_element{
+.loaded .header_connect_element{
     margin-top: 20px;
     padding: 0px 0px 0px 0px;
     float: right;
