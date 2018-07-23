@@ -39,7 +39,7 @@ header{
 	text-align: center;
 	text-decoration: none;
 	font-size: 17px;
-	padding: 10px 10px;
+	padding: 10px 7px;
 	color: #E9E9E9;
 }
 
@@ -52,18 +52,35 @@ header{
 	color: #888;
 }
 
+.header_navbar a:hover{
+	color: #888;
+}
+
 .header_navbar_nav{
-	margin-top: 10px;
+	margin-top: 12px;
 }
 
-#header_navbar_name{
-	color: #CDCDCD;
-	font-size: 20px;
+#header_navbar_firstname{
+	color: #E9E9E9;
+	font-size: 40px;
 	text-decoration: bold;
-	padding-right: 20px;
-	margin-top: 8px;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-family: 'Amatic SC', cursive;
 }
 
+#header_navbar_lastname{
+	color: #E9E9E9;
+	font-size: 40px;
+	text-decoration: bold;
+	margin-left: -5px;
+	padding-right: 20px;
+	margin-bottom: 15px;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-family: 'Amatic SC', cursive;
+}
 
 main{
 
