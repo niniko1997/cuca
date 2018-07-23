@@ -114,15 +114,28 @@ body{
   	/*IE 10+*/
 }
 
-.loaded .loader-wrapper, .loaded .loader, .loaded .loader-labels {
+.loaded .loader-wrapper, .loaded .loader, .loaded .loader-labels{
   opacity: 0;
+  -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateX(-100%);  /* IE 9 */
+  transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+  visibility: hidden;
+
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+ 
+  -webkit-transition: all 0.3s 1s ease-out; 
+  transition: all 0.3s 1s ease-out;
+}
+
 }
 
 .hidden {
   display: none;
 }
 
-.element-animation {
+.loader-element {
   bottom: 10px;
 
   animation: animationFrames ease-in 2.5s;
@@ -147,7 +160,7 @@ body{
   /*IE 10+*/
 }
 
-.element-animation img {
+.loader-element img {
   bottom: 5px;
   position: relative;
   right: 3px;
@@ -570,136 +583,136 @@ body{
 
 @keyframes colorChange {
   0% {
-    background-color: #ef5350;
+    background-color: #E6E6E6;
   }
   25% {
-    background-color: #ef5350;
+    background-color: #E6E6E6;
   }
   26% {
-    background-color: #4F759B;
+    background-color: #E6E6E6;
   }
   50% {
-    background-color: #4F759B;
+    background-color: #E6E6E6;
   }
   51% {
-    background-color: #55896F;
+    background-color: #E6E6E6;
   }
   75% {
-    background-color: #55896F;
+    background-color: #E6E6E6;
   }
   76% {
-    background-color: #FDA543;
+    background-color: #E6E6E6;
   }
   100% {
-    background-color: #FDA543;
+    background-color: #E6E6E6;
   }
 }
 
 @-webkit-keyframes colorChange {
   0% {
-    background-color: #ef5350;
+    background-color: #E6E6E6;
   }
   25% {
-    background-color: #ef5350;
+    background-color: #E6E6E6;
   }
   26% {
-    background-color: #4F759B;
+    background-color: #E6E6E6;
   }
   50% {
-    background-color: #4F759B;
+    background-color: #E6E6E6;
   }
   51% {
-    background-color: #55896F;
+    background-color: #E6E6E6;
   }
   75% {
-    background-color: #55896F;
+    background-color: #E6E6E6;
   }
   76% {
-    background-color: #FDA543;
+    background-color: #E6E6E6;
   }
   100% {
-    background-color: #FDA543;
+    background-color: #E6E6E6;
   }
 }
 
 @-moz-keyframes colorChange {
   0% {
-    background-color: #ef5350;
+    background-color: #E6E6E6;
   }
   25% {
-    background-color: #ef5350;
+    background-color: #E6E6E6;
   }
   26% {
-    background-color: #4F759B;
+    background-color: #E6E6E6;
   }
   50% {
-    background-color: #4F759B;
+    background-color: #E6E6E6;
   }
   51% {
-    background-color: #55896F;
+    background-color: #E6E6E6;
   }
   75% {
-    background-color: #55896F;
+    background-color: #E6E6E6;
   }
   76% {
-    background-color: #FDA543;
+    background-color: #E6E6E6;
   }
   100% {
-    background-color: #FDA543;
+    background-color: #E6E6E6;
   }
 }
 
 @-o-keyframes colorChange {
   0% {
-    background-color: #ef5350;
+    background-color: #E6E6E6;
   }
   25% {
-    background-color: #ef5350;
+    background-color: #E6E6E6;
   }
   26% {
-    background-color: #4F759B;
+    background-color: #E6E6E6;
   }
   50% {
-    background-color: #4F759B;
+    background-color: #E6E6E6;
   }
   51% {
-    background-color: #55896F;
+    background-color: #E6E6E6;
   }
   75% {
-    background-color: #55896F;
+    background-color: #E6E6E6;
   }
   76% {
-    background-color: #FDA543;
+    background-color: #E6E6E6;
   }
   100% {
-    background-color: #FDA543;
+    background-color: #E6E6E6;
   }
 }
 
 @-ms-keyframes colorChange {
   0% {
-    background-color: #ef5350;
+    background-color: #E6E6E6;
   }
   25% {
-    background-color: #ef5350;
+    background-color: #E6E6E6;
   }
   26% {
-    background-color: #4F759B;
+    background-color: #E6E6E6;
   }
   50% {
-    background-color: #4F759B;
+    background-color: #E6E6E6;
   }
   51% {
-    background-color: #55896F;
+    background-color: #E6E6E6;
   }
   75% {
-    background-color: #55896F;
+    background-color: #E6E6E6;
   }
   76% {
-    background-color: #FDA543;
+    background-color: #E6E6E6;
   }
   100% {
-    background-color: #FDA543;
+    background-color: #E6E6E6;
   }
 }
 
