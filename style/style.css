@@ -1021,7 +1021,7 @@ body{
 header{
 	background-color: #99D3DF;
 	height: 75px;
-	width: 150%;
+	width: 100%;
 	display: block;
 	position:fixed;
 	bottom: 0;
@@ -1036,16 +1036,15 @@ header{
 	z-index: 1;
 }
 
-.footer_wrapper{
-	padding: 10px;
-}
-
-
-.header_navbar{
-	overflow: hidden;
+.header_wrapper{
+	overflow: scroll;
 	bottom: 0;
 	padding-bottom: 7px;
+}
+
+.header_navbar{
 	display: block;
+	float: left;
 }
 
 .header_navbar a{
@@ -1056,7 +1055,6 @@ header{
 	padding: 10px 7px;
 	color: #E9E9E9;
 }
-
 
 .header_navbar a:active{
 	color: #200;
@@ -1072,6 +1070,7 @@ header{
 
 .header_navbar_nav{
 	margin-top: 12px;
+	display: inline-block;
 }
 
 #header_navbar_firstname{
@@ -1094,6 +1093,17 @@ header{
 	margin-bottom: 15px;
 	font-family: 'Barlow Condensed', sans-serif;
 	font-family: 'Amatic SC', cursive;
+}
+
+.head_connect{
+	float: right;
+	display: block;
+}
+
+.header_connect_element{
+    margin-top: 20px;
+    padding: 0px 0px 0px 0px;
+    float: right;
 }
 
 main{
