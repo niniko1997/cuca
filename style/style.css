@@ -1014,7 +1014,7 @@ body{
   }
 }
 
-header{
+.loaded header{
 	background-color: #99D3DF;
 	height: 75px;
 	width: 100%;
