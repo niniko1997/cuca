@@ -1058,19 +1058,15 @@ header{
 	color: #E9E9E9;
 }
 
-.loaded .header_navbar a:active{
+.header_navbar a:active{
 	color: #200;
 }
 
-.loaded .header_navbar a:hover{
+.header_navbar a:hover{
 	color: #888;
 }
 
-.loaded .header_navbar a:hover{
-	color: #888;
-}
-
-.loaded .header_navbar_nav{
+.header_navbar_nav{
 	margin-top: 12px;
 	display: inline-block;
 }
