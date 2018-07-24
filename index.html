@@ -69,14 +69,14 @@
       </ul>
 	</div>
 
-	<header>
+	<header id="header" class="">
 		<div class="header_line"></div>
 		
-		<div class="header_wrapper">
+		<div class="header_wrapper" id="header_wrapper">
 
-		<div class="header_navbar">
-			<a href="index.html" id="header_navbar_firstname">NINO</a>
-			<a href="index.html" id="header_navbar_lastname">MIGINEISHVILI</a>
+		<div class="header_navbar" id="header_navbar">
+			<a href="index.html" class="header_navbar_name" id="header_navbar_firstname">NINO</a>
+			<a href="index.html" class="header_navbar_name" id="header_navbar_lastname">MIGINEISHVILI</a>
 			<a href="art.html" class="header_navbar_nav">Art</a>
 			<a href="design.html" class="header_navbar_nav">Design</a>
 			<a href="writing.html" class="header_navbar_nav">Writing</a>
@@ -84,7 +84,7 @@
 			<a href="about.html" class="header_navbar_nav">About</a>
 		</div>
 
-		<div class="header_connect">
+		<div class="header_connect" id="header_connect">
 			<a href="mailto:m.nino97@gmail.com" class="header_connect_element" id="connect_mail">
 				<img src="img/connect_mail.png" width="30%" />
 			</a>
@@ -96,10 +96,36 @@
 			</a>
 		</div>
 
-		</div>
+		<a href="javascript:void(0);" class="nav-bar-icon" onclick="toggle_navbar()">
+    		<img src="img/navbar_icon.png" width="43%" />
+    	</a>
 
 		</div>
 	</header>
+
+	<nav id="mobile-navigation" class="">
+  		<ul data-content-field="navigation-mobileNav">
+  			<li class="mobile-navigation-nav">
+  				<a href="index.html">Home</a>
+  			</li>
+			 <li class="mobile-navigation-nav">
+			 	<a href="art.html">Art</a>
+			 </li>
+			 <li class="mobile-navigation-nav">
+          		<a href="design.html">Design</a>
+       		 </li>
+        	<li class="">
+          		<a href="/sculpt/">Writing</a>
+       		</li>
+      		<li class="mobile-navigation-nav">
+      			<a href="contact.html">Contact</a>
+      		</li>
+      		<li class="mobile-navigation-nav">
+      			<a href="about">About</a>
+      		</li>
+      	</ul>
+     </nav>
+
 	<main></main>
 	<footer>
 	</footer>
