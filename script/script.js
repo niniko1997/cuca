@@ -13,12 +13,14 @@ function toggle_navbar() {
     } else {
         x.className = "header_wrapper";
     }
+
     var x = document.getElementById("mobile-navigation");
     if (x.className === "") {
         x.className += " responsive";
     } else {
         x.className = "";
     }
+
     var x = document.getElementById("header");
     if (x.className === "") {
         x.className += " responsive";

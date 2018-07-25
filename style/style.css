@@ -52,28 +52,28 @@ body{
 	width: 200px;
 	position: relative;
   
-  	animation: textUp ease 2.5s;
-  	animation-iteration-count: 2;
-  	animation-fill-mode: forwards;
+  animation: textUp ease 2.5s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
 
-  	-webkit-animation: textUp ease 2.5s;
-  	-webkit-animation-iteration-count: 2;
-  	-webkit-animation-fill-mode: forwards;
+  -webkit-animation: textUp ease 2.5s;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-fill-mode: forwards;
   	
   	/*Chrome 16+, Safari 4+*/
-  	-moz-animation: textUp ease 2.5s;
-  	-moz-animation-iteration-count: 2;
-  	-moz-animation-fill-mode: forwards;
+  -moz-animation: textUp ease 2.5s;
+  -moz-animation-iteration-count: 2;
+  -moz-animation-fill-mode: forwards;
   
   	/*FF 5+*/
-  	-o-animation: textUp ease 2.5s;
-  	-o-animation-iteration-count: 2;
-  	-o-animation-fill-mode: forwards;
+  -o-animation: textUp ease 2.5s;
+  -o-animation-iteration-count: 2;
+  -o-animation-fill-mode: forwards;
   
   	/*Not implemented yet*/
-  	-ms-animation: textUp ease 2.5s;
-  	-ms-animation-iteration-count: 2;
-  	-ms-animation-fill-mode: forwards;
+  -ms-animation: textUp ease 2.5s;
+  -ms-animation-iteration-count: 2;
+  -ms-animation-fill-mode: forwards;
   	/*IE 10+*/
 }
 
@@ -1028,7 +1028,7 @@ header{
 	position:fixed;
 	bottom: 0;
 	z-index: 1;
-  transition: all ease 1s;
+  transition: height ease 1.5s;
 }
 
 .loaded .header_line{
@@ -1094,15 +1094,16 @@ header{
 	font-family: 'Amatic SC', cursive;
 }
 
-.loaded .head_connect{
+.loaded .header_connect{
 	float: right;
 	display: block;
+  width: 180px;
+  margin-top: 17px;
 }
 
 .loaded .header_connect_element{
-    margin-top: 20px;
-    padding: 0px 0px 0px 0px;
-    float: right;
+    margin-top: 25px;
+    padding-right: 5px;
 }
 
 .loaded .nav-bar-icon{
@@ -1117,11 +1118,51 @@ main{
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px){
+  .loaded .header_connect{
+    width: 120px;
+    margin-top: 22px;
+  }
+
+  .loaded .header_navbar a{
+
+    font-size: 17px;
+    padding: 10px 5px;
+  }
+
+  .loaded #header_navbar_lastname{
+    font-size: 40px;
+  }
+
+  .loaded #header_navbar_firstname{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 675px){
+  .loaded .header_navbar a{
+    font-size: 15px;
+    padding: 12px 4px;
+  }
+
+  .loaded #header_navbar_lastname{
+    font-size: 40px;
+  }
+
+  .loaded #header_navbar_firstname{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 620px) {
   .header_navbar a:not(.header_navbar_name) {
     display: none;
   }
-  .header_connect a{
+  .loaded .header_connect{
+    display: none;
+    width: 0%;
+  }
+  .loaded .header_connect a{
     display: none;
   }
   .header_wrapper a.nav-bar-icon{ 
@@ -1134,15 +1175,19 @@ main{
   }
 }
 
-@media screen and (max-width: 600px) {
-  header.responsive{
+@media screen and (max-width: 620px) {
+  .loaded header.responsive{
     position: fixed;
     top: 0;
   }
-  .header_wrapper.responsive {
-    background-color: #88BBD6;
-  }
 
+  .header_wrapper.responsive {
+    background-color: #99D3DF;
+  }
+  header.responsive .header_line{
+    display: none;
+    height: 0%;
+  }
   #mobile-navigation.responsive{
     display:block;
     position:absolute;
@@ -1151,7 +1196,7 @@ main{
     bottom:0px;
     overflow-y:scroll;
     overflow-x:hidden;
-    background-color:#99D3DF;
+    background-color:#88BBD6;
     opacity: 0.7;
   }
   #mobile-navigation.responsive ul{
@@ -1163,7 +1208,10 @@ main{
     color:#a8a8a8;
     font-size:18px !important;
     line-height:44px;
-    border-bottom:1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+  }
+  #mobile-navigation.responsive ul:first-child{
+    border-top: 2px solid #5588A3;
   }
   #mobile-navigation.responsive ul a{
     display:inline-block;
@@ -1177,17 +1225,32 @@ main{
     font-size:18px !important;
     opacity: 1;
   }
-
   #mobile-navigation.responsive ul a:hover{
     color:#888888;
     opacity: 1;
   }
 }
 
-
-
-
-
+@media screen and (max-width: 355px) {
+  .header_navbar a:not(:first-child) {
+    display: none;
+  }
+  .loaded .header_connect{
+    display: none;
+    width: 0%;
+  }
+  .loaded .header_connect a{
+    display: none;
+  }
+  .header_wrapper a.nav-bar-icon{ 
+    float: right;
+    display: block;
+    margin-top: 15px;
+    margin-right: 0px;
+    padding: 0;
+    width: 100px;
+  }
+}
 
 
 
