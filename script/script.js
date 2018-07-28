@@ -1,9 +1,16 @@
 $(document).ready(function() {
- 
-    setTimeout(function(){
+    var x = document.body;
+
+    console.log(x.className)
+    
+    if(x.className === 'no-load loaded'){
+        console.log("If true")
+    }
+    else{
+        setTimeout(function(){
         $('body').toggleClass('loaded');
-    }, 3000);
- 
+        }, 3000);
+    }
 });
 
 function toggle_navbar() {
