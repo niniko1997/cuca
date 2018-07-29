@@ -6,11 +6,13 @@
 }
 
 #mainContent{
-	padding: 4em;
+	padding-top: 2em;
+	padding-left: 4em;
 	max-width: 100%;
 	box-sizing: border-box;
 	margin: 0 auto; 
 }
+
 
 h1{
 	font-weight: 500;
@@ -25,7 +27,9 @@ h1{
 
 .contact-content div{
 	display: inline-block;
-	max-width: 25%;
+	max-width: 33%;
+	min-width: 33%;
+	position: relative;
 }
 
 .contact-content div ul{
@@ -40,7 +44,7 @@ h2{
 	font-size: 35px;
 	text-decoration: none;
 	letter-spacing: 0.01em;
-	color: #88BBD6;
+	color: rgba(3,3,3, 0.9);
 	text-align: center;
 }
 
@@ -48,7 +52,7 @@ h2{
 	width: 120px;
 	height: 120px;
 
-  	background-color: #88BBD6;
+  	background-color: rgba(136, 187, 214, 0.7);
   	overflow: hidden;
   	display: block;
   	
@@ -56,7 +60,7 @@ h2{
   	-webkit-border-radius: 100%;
   	border-radius: 100%;
   
-  	border: 3px solid #E6E6E6;
+  	border: 3px solid rgba(0,0,0, 0.5);
   	position: relative;
   	margin: 15px auto;
 }
@@ -64,3 +68,33 @@ h2{
 .contact-img img{
 	margin-top: 10px;
 }
+
+.contact-img:hover{
+  	-moz-border-radius: 100%;
+  	-webkit-border-radius: 100%;
+  	border-radius: 100%;
+  
+  	border: 3px solid #000;
+	background-color: rgba(136, 187, 214, 1);
+}
+
+.contact-hire{
+	top: -25px;
+}
+
+.contact-social-media{
+	min-width: 30%;
+	max-width: 30%;
+	top: -81px;
+}
+
+
+
+
+
+
+
+
+
+
+
