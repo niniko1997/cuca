@@ -27,9 +27,11 @@ h1{
 
 .contact-content div{
 	display: inline-block;
-	max-width: 33%;
-	min-width: 33%;
+	max-width: 27%;
+	min-width: 27%;
 	position: relative;
+	margin-right: 2%;
+	margin-left: 2%;
 }
 
 .contact-content div ul{
@@ -79,13 +81,13 @@ h2{
 }
 
 .contact-hire{
-	top: -25px;
+	top: 0px;
 }
 
 .contact-social-media{
 	min-width: 30%;
 	max-width: 30%;
-	top: -81px;
+	top: -27px;
 }
 
 
