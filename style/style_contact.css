@@ -25,6 +25,12 @@ h1{
 	text-align: left;
 }
 
+
+.contact-content{
+	display: flex;
+	justify-content: start ;
+}
+
 .contact-content div{
 	display: inline-block;
 	max-width: 27%;
@@ -36,11 +42,6 @@ h1{
 
 .contact-content div ul{
 	list-style: none;
-}
-
-.contact-content a{
-	text-decoration: none;
-	color: ;
 }
 
 .contact-content a:hover{
@@ -95,7 +96,7 @@ h2{
 }
 
 .contact-hire{
-	position: relative;
+	position: absolute;
 }
 
 .contact-social-media{
