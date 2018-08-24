@@ -95,19 +95,16 @@ h2{
 }
 
 .contact-hire{
-	top: -37px;
+	position: relative;
 }
 
 .contact-social-media{
-	min-width: 30%;
-	max-width: 30%;
-	top: 0;
+	position: absolute;
 }
 
 
 .contact-email{
-	top: -37px;
-
+	position: absolute;
 }
 
 
