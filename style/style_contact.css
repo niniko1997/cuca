@@ -108,6 +108,28 @@ h2{
 	position: absolute;
 }
 
+@media screen and (max-width: 880px) {
+	#mainContent{
+		padding: 2em;
+	}
+	.contact-content{
+		display: block;
+		justify-content: center;
+		overflow: scroll;
+	}
+
+	.contact-content div{
+		display: block;
+		max-width: 100%;
+		min-width: 100%;
+		position: relative;
+		margin-bottom: 80px;
+	}
+
+	.contact-social-img img{
+		width: 120px;
+	}
+}
 
 
 
